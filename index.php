@@ -19,6 +19,16 @@ foreach($challenge[1]->getNumbers() as $value){
 
 echo("<hr>");
 
+$challenge[2] = new \Src\Challenge\NonRepeated();
+$challenge[2]->repeatedValue([2,5,8,2,8,5,3,9,6,3,4,6,3,1,2,1,2,3,7,1]);
+
+echo("Valores Que Não Repetem: ");
+foreach($challenge[2]->getList() as $value)
+{
+    echo($value . ' ');
+}
+
+/*
 function repeatedValue($array)
 {
     $list = [];
@@ -41,5 +51,4 @@ foreach(repeatedValue($array) as $repeated)
 {
     echo($repeated . ' ');
 }
-
-echo("<hr>");
+*/
