@@ -27,28 +27,3 @@ foreach($challenge[2]->getList() as $value)
 {
     echo($value . ' ');
 }
-
-/*
-function repeatedValue($array)
-{
-    $list = [];
-    $array = array_count_values($array);
-    
-    foreach($array as $key => $value)
-    {
-        if($value == 1)
-        {
-            array_push($list, $key);
-        }
-    }
-
-    return($list);
-}
-$array = [2,5,8,2,8,5,3,9,6,3,4,6,3,1,2,1,2,3,7,1];
-
-echo("Valores Que Não Repetem: ");
-foreach(repeatedValue($array) as $repeated)
-{
-    echo($repeated . ' ');
-}
-*/
